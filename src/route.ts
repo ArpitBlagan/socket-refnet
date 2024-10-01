@@ -12,4 +12,5 @@ router.route("/notifyUser").post(async (req: Request, res: Response) => {
     message,
     createdAt,
   });
+  res.status(202).json({ message: "notification send to user." });
 });
